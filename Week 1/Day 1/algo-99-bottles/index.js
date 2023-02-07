@@ -1,4 +1,5 @@
 function bottleSong(bottles) {
+  const start = bottles
   while (bottles !== 0) {
     if (bottles === 1) {
       console.log(`1 bottle of beer on the wall, 1 bottle of beer.`);
@@ -11,7 +12,7 @@ function bottleSong(bottles) {
     if (bottles === 0) {
       console.log(`Take one down and pass it around, no more bottles of beer on the wall.`);
       console.log("No more bottles of beer on the wall, no more bottles of beer.")
-      console.log("Go to the store and buy some more, 99 bottles of beer on the wall.")
+      console.log(`Go to the store and buy some more, ${start} bottles of beer on the wall.`)
     } else if (bottles === 1) {
       console.log(`Take one down and pass it around, 1 bottle of beer on the wall.`);
     } else {
