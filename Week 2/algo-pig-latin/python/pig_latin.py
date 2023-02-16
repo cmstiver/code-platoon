@@ -39,8 +39,6 @@ def translateWord(word):
 
         result += consonants
 
-    print(tracker)
-
     result += "ay"
     result += punctuation
 
