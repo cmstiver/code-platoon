@@ -1,3 +1,7 @@
+.nav {
+    align-content: center;
+}
+
 .nav-link {
     color: white;
     font-size: 1.4rem;
@@ -13,12 +17,35 @@
     'opsz' 48
 }
 
-.nav-link {
-    padding-left: 5px;
-    padding-right: 5px;
+.nav-item {
+    margin-top: 5px;
+    display: flex;
+    font-size: 1.4rem;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 10px;
 }
 
-.nav-item {
-    display: flex;
-    margin-top: 10px;
+.nav-item:hover {
+    background-color: rgb(40, 40, 40);
+    cursor: pointer;
+}
+
+.nav-name {
+    margin-left: 8px;
+}
+
+@media (max-width: 1060px) {
+    .nav-name {
+        display: none;
+    }
+
+    .nav {
+        align-content: end;
+    }
+
+    .col {
+        padding: 0;
+    }
+
 }

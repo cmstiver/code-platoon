@@ -2,7 +2,7 @@ function addTweets() {
     const parent = document.getElementById("tweets");
     for (i = 0; i !== 100; i++) {
         parent.innerHTML += `<div class="row border-bottom p-2">
-        <div class="col-1 p-0">
+        <div class="col-lg-1 col-3 p-0">
             <img
                 src="https://pbs.twimg.com/profile_images/1407429076885794817/_CSWrfq-_400x400.jpg"
                 style="
@@ -13,7 +13,7 @@ function addTweets() {
                                     "
             ></img>
         </div>
-        <div class="col-11">
+        <div class="col-lg-11 col-9">
             <div class="row">
                 <div
                     class="col-auto p-0"
@@ -40,7 +40,5 @@ function addTweets() {
     `;
     }
 }
-
-console.log("hello");
 
 addTweets();
